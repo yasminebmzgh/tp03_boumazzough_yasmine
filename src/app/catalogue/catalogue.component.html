@@ -1,2 +1,9 @@
-<p>catalogue works!</p>
-<div *ngFor="let c of catalogue$ | async ">{{ c.title }} {{ c.price }} </div>
+<h1>Catalogue des produits</h1>
+<app-search-bar [categorie]="'name'" [listeFiltree]="tabProduits" (filterResult)="updateCatalogue($event)"
+        (filterReset)="getCatalogue()">
+</app-search-bar>
+<ul>
+    <li *ngFor="let produit of tabProduits">
+      {{ produit.name }}
+    </li>
+</ul>

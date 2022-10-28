@@ -5,7 +5,7 @@ import { map, tap, reduce, take } from 'rxjs/operators';
 import { FormControl } from '@angular/forms';
 import { CatalogueService } from '../catalogue.service';
 import { Subscription } from 'rxjs';
-import { Catalogue } from '../core/catalogue';
+import { Catalogue } from '../core/Catalogue';
 @Component({
   selector: 'app-catalogue',
   templateUrl: './catalogue.component.html',

@@ -9,6 +9,7 @@ import { LetterOnlyDirective } from './letter-only.directive';
 import { NumberOnlyDirective } from './number-only.directive';
 import { PhonePipePipe } from './phone-pipe.pipe';
 import { ClientInfoComponent } from './client-info/client-info.component';
+import { CatalogueComponent } from './catalogue/catalogue.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ClientInfoComponent } from './client-info/client-info.component';
     LetterOnlyDirective,
     NumberOnlyDirective,
     PhonePipePipe,
-    ClientInfoComponent
+    ClientInfoComponent,
+    CatalogueComponent
   ],
   imports: [
     BrowserModule,
